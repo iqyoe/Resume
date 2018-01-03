@@ -1,0 +1,86 @@
+/*
+ * Base structure
+ */
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+/*
+ * Typography
+ */
+
+h1 {
+  padding-bottom: 9px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 15vh 0 0 0;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  border-right: 1px solid #eee;
+  background: #4484CE !important;
+  text-align: center;
+}
+
+.sidebar .nav-pills .nav-link{
+  background-color: rgba(255,255,255,0) !important;
+  font-weight: 600;
+}
+
+.sidebar .nav {
+  margin-bottom: 20px;
+}
+
+.sidebar .nav-item {
+  width: 100%;
+  font-size: 1.2em;
+}
+
+.sidebar .nav-item + .nav-item {
+  margin-left: 0;
+}
+
+.sidebar .nav-link {
+  border-radius: 0;
+  text-transform: uppercase;
+}
+
+.sidebar a{
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.sidebar a:hover{
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/*
+ * Dashboard
+ */
+
+/* Placeholders */
+main h1, h2, h3, h4, h5{
+    font-family: Oswald, Arial;
+}
+section{
+  height: 100vh;
+}
+#about{
+  padding-top:20vh;
+}
+
+#about h1{
+  font-size: 4em;
+}
+
+#about h5 span{
+  margin: 0 1em;
+}
