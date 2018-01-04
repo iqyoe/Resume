@@ -1,7 +1,7 @@
 /*
  * Base structure
  */
-@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Anton|Roboto');
 
 /*
  * Typography
@@ -68,19 +68,39 @@ h1 {
 
 /* Placeholders */
 main h1, h2, h3, h4, h5{
-    font-family: Oswald, Arial;
+    font-family: Anton, Arial;
+}
+h2{
+  font-size: 3em;
+  text-transform: uppercase;
+}
+h3{
+  text-transform: uppercase;
 }
 section{
-  height: 100vh;
+  min-height: 100vh;
 }
-#about{
-  padding-top:20vh;
+p{
+  font-family: Roboto, Arial;
 }
 
+#about{
+  padding-top:10vh;
+}
 #about h1{
   font-size: 4em;
 }
-
-#about h5 span{
+#about p span{
   margin: 0 1em;
+}
+#about p{
+  text-align: justify;
+}
+
+#exp .pin{
+  text-align: right;
+}
+#exp p, #exp li{
+  font-size: 0.7em;
+  text-align: justify;
 }
