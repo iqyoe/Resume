@@ -146,3 +146,9 @@ button.full-screen:hover {opacity: 1;}
   background-image: url('../images/backgrounds/profile.jpeg');
   background-size: cover;
 }
+
+@media screen and (max-width: 768px) {
+  body{
+    font-size: 9px;
+  }
+}
