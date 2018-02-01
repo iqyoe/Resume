@@ -22,12 +22,12 @@ body {
 	font-weight:400;
 	-webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
-	color: #fff;
+	color: rgba(255,255,255,1);
 	background: #000;
 }
 h1, h2, h3, h4, h5, h6{
 	/*font-family: 'Coustard', serif;*/
-	color:#fff;
+	color:#ffa800;
 	font-weight: normal;
 	letter-spacing: 1px;
 }
