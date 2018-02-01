@@ -22,7 +22,7 @@ body {
 	font-weight:400;
 	-webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
-	color: #777;
+	color: #fff;
 	background: #000;
 }
 h1, h2, h3, h4, h5, h6{
@@ -144,8 +144,8 @@ button.full-screen:hover {opacity: 1;}
 }
 
 .profpic{
-  height: 20vh;
-  width: 20vh;
+  height: 27vh;
+  width: 27vh;
   border-radius: 50%;
   background-image: url('../images/backgrounds/profile.jpeg');
   background-size: cover;
