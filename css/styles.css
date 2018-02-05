@@ -66,7 +66,7 @@ a:hover {
 	float:left;
 	margin:40px;
 	position:absolute;
-	top:200px;
+	top:130px;
 	width:600px;
 	z-index:9999;
 	-webkit-font-smoothing:antialiased;
@@ -149,6 +149,15 @@ button.full-screen:hover {opacity: 1;}
   border-radius: 50%;
   background-image: url('../images/backgrounds/profile.jpeg');
   background-size: cover;
+}
+
+#btn-download{
+  margin: 3em;
+  padding: 0.7em 2em;
+  background-color: #ffa800 !important;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 40px;
 }
 
 @media screen and (max-width: 768px) {
