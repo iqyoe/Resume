@@ -159,9 +159,3 @@ button.full-screen:hover {opacity: 1;}
   font-weight: bold;
   border-radius: 40px;
 }
-
-@media screen and (max-width: 768px) {
-  body{
-    font-size: 20px;
-  }
-}
