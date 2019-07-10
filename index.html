@@ -42,7 +42,7 @@
                 <!-- About Me -->
                 <div id="aboutme" class="row mt-3 wow fadeIn slow">
                     <div class="col-sm-12 col-md-4 mt-3 text-center view overlay zoom">
-                        <img src="img/profile.JPEG" class="img-fluid rounded-circle" style="max-height: 15em; margin:auto;" alt="Muhammad Iqbal Profile Picture" >
+                        <img src="img/profile.jpg" class="img-fluid rounded-circle" style="max-height: 15em; margin:auto;" alt="Muhammad Iqbal Profile Picture" >
                     </div>
                     <div class="col-sm-12 col-md-4 mt-3">
                         <p class="h2">ABOUT ME</p>
@@ -187,7 +187,7 @@
                    <h1>Give me a message !</h1>
                </div>
                <div class="col-12">
-                   <form action="" id="contactForm">
+                   <form action="https://formspree.io/muhiqballukman@gmail.com" method="POST" id="contactForm">
                         <!-- Name -->
                         <label for="">Name</label>
                         <input type="text" id="contactName" name="contactName" class="form-control mb-4" placeholder="Your Name">
@@ -202,10 +202,10 @@
                         <!-- Message -->
                         <label for="">Message</label>
                         <div class="form-group">
-                            <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Your Message Here"></textarea>
+                            <textarea id="contactMessage" name="contactMessage" class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Your Message Here"></textarea>
                         </div>
                         <!-- Send button -->
-                        <button class="btn btn-info btn-block" id="sendContact">Send</button>
+                        <button class="btn btn-danger btn-block" id="sendContact">Send</button>
 
                    </form>
                </div>
@@ -226,13 +226,26 @@
     <script src="js/wow.min.js"></script>
     <script>
         new WOW().init();
-        $(document).ready({
-            $(".sendContact").click(function(){
-
-            });
+        var name = $("#contactName");
+        var email = $("#contactEmail");
+        var subject = $("#contactSubject");
+        var msg = $("#contactMessage");
+        function checkinput(){
+            if(name.val()==="" || email.val()==="" || subject.val()==="" || msg.val()==="" || name.val()===null || email.val()===null || subject.val()===null || msg.val()===null){
+                $("#sendContact").prop("disabled",true);
+            }
+        }
+        name.change(function(){
+            checkinput();
         });
-        $(document).load({
-            
+        email.change(function(){
+            checkinput();
+        });
+        subject.change(function(){
+            checkinput();
+        });
+        msg.change(function(){
+            checkinput();
         });
     </script>
 </body>
