@@ -14,14 +14,14 @@ body{
     /* background-size: cover */
 
     /* https://codepen.io/P1N2O/# Background Gradient by Manuel Pinto */
-    /* background: linear-gradient(-45deg, #171717, #212121, #373737);
-	background-size: 400% 400%;
+    background: linear-gradient(-45deg, #171717, #212121, #373737);
+	/* background-size: 400% 400%;
 	-webkit-animation: Gradient 5s ease infinite;
 	-moz-animation: Gradient 5s ease infinite;
     animation: Gradient 5s ease infinite; */
-    background: url("../img/background-3.jpg");
+    /* background: url("../img/background-3.jpg");
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed; */
     cursor: url(../img/cursor.svg), auto;
 }
 /* 
