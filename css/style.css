@@ -88,7 +88,13 @@ body{
 #aboutme .social-link{
     font-size: 1.8em;
 }
-#btn-resume{
+#aboutme .social-link a{
+    color: rgb(255, 53, 71);
+}
+#aboutme .social-link a:hover{
+    color: #991f2a;
+}
+/* #btn-resume{
     margin-right: 0;
 }
 #btn-contact{
@@ -96,7 +102,7 @@ body{
     color: #FF3547 !important;
     font-weight: 500;
     margin-left: 0;
-}
+} */
 /* Pure CSS Animated Mouse Scroll Icon by Deepak K Vijayan https://codepen.io/2xsamurai/pen/WwmjKQ */
 .scroll-downs {
     position: absolute;
